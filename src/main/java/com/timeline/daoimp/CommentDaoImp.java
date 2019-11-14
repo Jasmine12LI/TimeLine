@@ -5,7 +5,10 @@ import com.timeline.dao.*;
 import com.timeline.util.*;
 
 import java.sql.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.function.DoubleBinaryOperator;
 
@@ -106,19 +109,63 @@ public class CommentDaoImp implements CommentDao {
                 String comment = rs.getString("comment");
                 String picture = rs.getString("picture");
                 String timestamp = rs.getString("timestamp");
-
+                String NewTime = convert(timestamp);
                 //
-                Comment comment1 = new Comment(uid,username,comment,picture,timestamp);
+                Comment comment1 = new Comment(uid,username,comment,picture,NewTime);
                 commentList.add(comment1);
             }
             return commentList;
-        }catch (SQLException e){
+        }catch (SQLException | ParseException e){
             e.printStackTrace();
         } finally {
             close(conn,pstmt,rs);
         }
         return null;
     }
+    public String convert(String dateTimeStamp) throws ParseException {
+        String result;
+        int  minute = 1000 * 60;
+        int hour = minute * 60;
+        int day = hour * 24;
+        int halfamonth = day * 15;
+        int month = day * 30;
+        long now = new java.util.Date().getTime();
+        final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        final Date datetime = sdf.parse(dateTimeStamp);
+        final long time = datetime.getTime();
 
+        long diffValue = now - time;
+        if(diffValue < 0){
+            return "";
+        }
+        long monthC = diffValue / month;
+        long weekC = diffValue / (7 * day);
+        long dayC = diffValue / day;
+        long hourC = diffValue / hour;
+        long minC = diffValue / minute;
+        if(monthC>=1){
+            if(monthC<=12)
+                result="" + monthC+ "月前";
+            else{
+                result=dateTimeStamp;
+            }
+        }
+        else if(weekC>=1){
+            result="" + weekC + "周前";
+        }
+        else if(dayC>=1){
+            result=""+ dayC +"天前";
+        }
+        else if(hourC>=1){
+            result=""+ hourC +"小时前";
+        }
+        else if(minC>=1){
+            result=""+ minC +"分钟前";
+        }else{
+            result="刚刚";
+        }
+        return result;
+
+    }
 
 }
