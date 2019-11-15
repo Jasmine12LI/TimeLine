@@ -8,9 +8,40 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1TblNCAZd5sJh3besD660NT7nU3" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="D:/jar包/fest-swing-1.0a1.jar/fest-swing-1.0a1.jar!/" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.timeline.ui" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -24,17 +55,63 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.timeline.Main" />
+  <component name="RunManager" selected="JUnit.CommentBoxsTest">
+    <configuration name="CommentBoxsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="timeline-demo" />
+      <option name="PACKAGE_NAME" value="com.timeline.ui" />
+      <option name="MAIN_CLASS_NAME" value="com.timeline.ui.CommentBoxsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommentBoxsTest.testConvert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="timeline-demo" />
+      <option name="PACKAGE_NAME" value="com.timeline.ui" />
+      <option name="MAIN_CLASS_NAME" value="com.timeline.ui.CommentBoxsTest" />
+      <option name="METHOD_NAME" value="testConvert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommentBoxsTest.testConvert_a_few_days_ago" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="timeline-demo" />
+      <option name="PACKAGE_NAME" value="com.timeline.ui" />
+      <option name="MAIN_CLASS_NAME" value="com.timeline.ui.CommentBoxsTest" />
+      <option name="METHOD_NAME" value="testConvert_a_few_days_ago" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommentBoxsTest.testConvert_a_few_hours_ago" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="timeline-demo" />
+      <option name="PACKAGE_NAME" value="com.timeline.ui" />
+      <option name="MAIN_CLASS_NAME" value="com.timeline.ui.CommentBoxsTest" />
+      <option name="METHOD_NAME" value="testConvert_a_few_hours_ago" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommentBoxsTest.testConvert_a_few_minutes_ago" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="timeline-demo" />
+      <option name="PACKAGE_NAME" value="com.timeline.ui" />
+      <option name="MAIN_CLASS_NAME" value="com.timeline.ui.CommentBoxsTest" />
+      <option name="METHOD_NAME" value="testConvert_a_few_minutes_ago" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.CommentBoxsTest" />
+        <item itemvalue="JUnit.CommentBoxsTest.testConvert_a_few_days_ago" />
+        <item itemvalue="JUnit.CommentBoxsTest.testConvert_a_few_hours_ago" />
+        <item itemvalue="JUnit.CommentBoxsTest.testConvert_a_few_minutes_ago" />
+        <item itemvalue="JUnit.CommentBoxsTest.testConvert" />
       </list>
     </recent_temporary>
   </component>
@@ -45,11 +122,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573736633869</updated>
-      <workItem from="1573736636105" duration="150000" />
+      <workItem from="1573736636105" duration="6726000" />
+      <workItem from="1573793920194" duration="4899000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/timeline/ui/CommentBoxsTest.java</url>
+          <line>51</line>
+          <properties class="com.timeline.ui.CommentBoxsTest" method="testConvert_a_few_minutes_ago">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

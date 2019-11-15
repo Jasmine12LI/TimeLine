@@ -109,13 +109,12 @@ public class CommentDaoImp implements CommentDao {
                 String comment = rs.getString("comment");
                 String picture = rs.getString("picture");
                 String timestamp = rs.getString("timestamp");
-                String NewTime = convert(timestamp);
                 //
-                Comment comment1 = new Comment(uid,username,comment,picture,NewTime);
+                Comment comment1 = new Comment(uid,username,comment,picture,timestamp);
                 commentList.add(comment1);
             }
             return commentList;
-        }catch (SQLException | ParseException e){
+        }catch (SQLException e){
             e.printStackTrace();
         } finally {
             close(conn,pstmt,rs);
